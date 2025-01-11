@@ -11268,5 +11268,71 @@ footer a:hover, footer a:active, footer a:focus {
 .button-35:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
-  
+
+/* Contact  */
+.contact-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns */
+  max-width: calc(33.333% - 20px);
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-item {
+    flex: 1 1 calc(50% - 20px); /* 2 columns */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-item {
+    flex: 1 1 100%; /* 1 column */
+    max-width: 100%;
+  }
+}
+
 
