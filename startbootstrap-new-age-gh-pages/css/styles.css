@@ -254,11 +254,11 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: var(  --bs-black);
   text-decoration: none;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-gray-600);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -10877,8 +10877,8 @@ section {
 
 /* Nav */
 #mainNav {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: #fff;
 }
 #mainNav .navbar-brand {
@@ -10964,7 +10964,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
+  background-image: url("https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
 }
@@ -11096,14 +11096,14 @@ footer a:hover, footer a:active, footer a:focus {
 
 .mastheadcourse {
   background-color: #f8f9fa;
-  padding-top: 8rem;
+  padding-top: 6rem;
   padding-bottom: 8rem;
 }
 
 
 .masthead {
   background-color: #f8f9fa;
-  padding-top: 8rem;
+  padding-top: 0rem;
   padding-bottom: 8rem;
 }
 .masthead .masthead-device-mockup {
@@ -11340,3 +11340,162 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 
+/* ตั้งค่าสีพื้นฐาน */
+:root {
+  --modal-bg-gradient: linear-gradient(135deg, #007bff, #66b2ff); /* ไล่สีฟ้าสำหรับส่วนหัว */
+  --modal-header-color: #ffffff; /* สีตัวอักษรส่วนหัว */
+  --modal-body-bg: #ffffff; /* พื้นหลังสีขาว */
+  --modal-text-color: #000000; /* สีข้อความในเนื้อหา */
+  --modal-highlight-bg: #f8f9fa; /* กล่องข้อความสีเทาอ่อน */
+  --modal-border-color: #d1d5db; /* สีเส้นขอบ */
+  --modal-link-color: #0056b3; /* สีลิงก์ */
+  --modal-link-hover: #003d80; /* สีลิงก์เมื่อ hover */
+}
+
+/* สไตล์ Modal */
+.modal-content {
+  border-radius: 10px; /* ขอบมน */
+  overflow: hidden; /* ซ่อนส่วนเกิน */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เงา */
+}
+
+/* ส่วนหัว */
+.modal-header {
+  background: var(--modal-bg-gradient); /* ไล่สี */
+  color: var(--modal-header-color); /* สีตัวอักษร */
+  padding: 1.5rem; /* เพิ่มระยะห่าง */
+  font-size: 1.5rem; /* ขนาดข้อความ */
+  font-weight: bold;
+  border-bottom: none; /* ลบเส้นใต้ */
+  text-align: center; /* จัดข้อความกึ่งกลาง */
+}
+
+/* กำหนดสี h5 ใน modal-header */
+.modal-header h5 {
+  color: #ffffff; /* สีขาว */
+}
+
+/* ปุ่มปิด */
+.modal-header .btn-close {
+  background-color: rgba(255, 255, 255, 0.7); /* สีปุ่มปิด */
+  border: none;
+}
+
+.modal-header .btn-close:hover {
+  background-color: rgba(255, 255, 255, 1); /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ส่วนเนื้อหา */
+.modal-body {
+  background: var(--modal-body-bg); /* พื้นหลังสีขาว */
+  color: var(--modal-text-color); /* สีข้อความสีดำ */
+  padding: 2rem; /* ระยะห่าง */
+  line-height: 1.8; /* ความสูงบรรทัด */
+}
+
+/* ส่วนหัวข้อ */
+.modal-body h6 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--modal-text-color); /* สีดำ */
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--modal-border-color); /* เส้นใต้หัวข้อ */
+  padding-bottom: 0.3rem;
+}
+
+/* กล่องเน้น */
+.modal-body .highlight {
+  background: var(--modal-highlight-bg); /* สีเทาอ่อน */
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--modal-border-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* รายการเบอร์โทร */
+.modal-body ul {
+  padding-left: 1.5rem;
+  list-style-type: none; /* ลบจุด */
+  margin-bottom: 1rem;
+}
+
+.modal-body ul li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.modal-body ul li::before {
+  content: '📞'; /* ไอคอนโทรศัพท์ */
+  margin-right: 0.5rem;
+  color: var(--modal-text-color); /* สีดำ */
+}
+
+/* ลิงก์ */
+.modal-body a {
+  color: var(--modal-link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-body a:hover {
+  color: var(--modal-link-hover);
+  text-decoration: underline;
+}
+
+* ฟอนต์ Kanit */
+.kanit-thin {
+    font-family: "Kanit", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-black {
+    font-family: "Kanit", serif;
+    font-weight: 900;
+    font-style: normal;
+}

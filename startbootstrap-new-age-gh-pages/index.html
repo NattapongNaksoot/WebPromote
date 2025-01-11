@@ -7,6 +7,15 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>BCI - Chatbot Promote</title>
+
+    <!-- ฟ้อนท์คณิต -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- ฟ้อนท์คณิต -->
+     <!-- ใส่ลิงก์ฟอนต์ในส่วน <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="assets/img/BCI LOGO.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -34,7 +43,7 @@
                     <img class="app-badge" src="assets/img/Logo_BCI-Photoroom.png" alt="..." style="height: 2.5rem" />
                 </a>
 
-                <a class="navbar-brand " href="#page-top">Business competitive Intelligence</a>
+                <a href="#page-top">Business competitive Intelligence</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -145,13 +154,59 @@
     </header>
 
 
-<section class="sectionvideo" id="chatbot1">
-        <div class="row gx-5 justify-content-center">
-            <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                <source src="assets/img/slice 1.mp4" type="video/mp4" />
-            </video>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="kanit-bold" id="exampleModalLabel">ช่องทางการติดต่อ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="highlight">
+                        <h6 class="kanit-semibold">เวลาทำการ :</h6>
+                        <p>จันทร์ - ศุกร์: 09:00 - 18:00 น.<br>เสาร์ - อาทิตย์: ปิดทำการ</p>
+                    </div>
+    
+                    <div class="highlight">
+                        <h6 class="kanit-semibold">เบอร์โทร Sale :</h6>
+                        <ul>
+                            <li>025-822-110</li>
+                            <li>086-395-0364</li>
+                            <li>097-978-9097</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight">
+                        <h6 class="kanit-semibold">เบอร์โทร Support :</h6>
+                        <ul>
+                            <li>02-123-4567</li>
+                            <li>081-234-5678</li>
+                            <li>082-345-6789</li>
+                        </ul>
+                    </div>
+    
+                    <div class="highlight">
+                        <h6 class="kanit-semibold">ที่อยู่ :</h6>
+                        <p>123 อาคารเทคโนโลยี ชั้น 4<br>ถนนสุขุมวิท เขตคลองเตย<br>กรุงเทพฯ 10110</p>
+                    </div>
+    
+                    <div class="highlight">
+                        <h6>เว็บไซต์:</h6>
+                        <p><a href="https://www.example.com" target="_blank">www.example.com</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    
+    
+    
 
     <!-- Mashead header-->
     <header class="masthead" id="chatbot1">
@@ -169,7 +224,8 @@
                         </p>
 
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <button class="button-35" role="button">
+                            <button class="button-35" role="button" data-bs-toggle="modal"
+                                data-bs-target="#feedbackModal">
                                 <i class="bi-chat-text-fill me-2"></i>
                                 <span class="small">สนใจติดต่อ</span>
                             </button>
@@ -222,8 +278,15 @@
             </div>
         </div>
     </header>
-    
-    
+
+
+    <section class="sectionvideo" id="chatbot1">
+        <div class="row gx-5 justify-content-center">
+            <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                <source src="assets/img/Slide Device 2.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
 
     <!-- Quote/testimonial aside-->
     <!-- <aside class="text-center bg-gradient-primary-to-secondary">
@@ -247,7 +310,7 @@
                             <div class="col-md-6 mb-5">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <img src="assets/img/discount.png" alt="..." style="height: 8rem" />
+                                    <img src="assets/img/save-money.png" alt="..." style="height: 8rem" />
                                     <p> </p>
                                     <h3 class="font-alt">ลดต้นทุน</h3>
                                     <p class="text-muted mb-0">ประหยัดค่าใช้จ่ายในการจ้างพนักงาน <br>
@@ -257,7 +320,7 @@
                             <div class="col-md-6 mb-5">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <img src="assets/img/snap.png" alt="..." style="height: 8rem" />
+                                    <img src="assets/img/easy-to-use.png" alt="..." style="height: 8rem" />
                                     <p> </p>
                                     <h3 class="font-alt">ใช้งานง่าย</h3>
                                     <p class="text-muted mb-0">ออกแบบมาเพื่อการใช้งานที่ไม่ซับซ้อน <br> ติดตั้งง่าย
@@ -269,7 +332,7 @@
                             <div class="col-md-6 mb-5 mb-md-0">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <img src="assets/img/wrench.png" alt="..." style="height: 8rem" />
+                                    <img src="assets/img/fix.png" alt="..." style="height: 8rem" />
                                     <p> </p>
                                     <h3 class="font-alt">ง่ายต่อการบำรุงรักษา</h3>
                                     <p class="text-muted mb-0">อัปเดตและปรับแต่งได้สะดวก <br>
@@ -279,7 +342,7 @@
                             <div class="col-md-6">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <img src="assets/img/verify.png" alt="..." style="height: 8rem" />
+                                    <img src="assets/img/check2.png" alt="..." style="height: 8rem" />
                                     <p> </p>
                                     <h3 class="font-alt">ใช้ได้ทุกแพลตฟอร์ม</h3>
                                     <p class="text-muted mb-0">รองรับทุกช่องทาง ทั้งเว็บไซต์ แอปพลิเคชัน
@@ -339,9 +402,11 @@
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5">
                     <h2 class="display-4 lh-1 mb-4">About Us</h2>
-                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some
-                        information about your application, why it was built, the problem it solves, or anything else!
-                        There's plenty of space for text here, so don't worry about writing too much.</p>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">"จากผู้เชี่ยวชาญในระบบ ERP สู่ผู้สร้างสรรค์ AI
+                        Chatbot ที่ตอบโจทย์ธุรกิจทุกขนาด"
+                        เราเป็นบริษัทที่มุ่งมั่นพัฒนาโซลูชัน ERP เพื่อช่วยให้ธุรกิจเติบโตอย่างยั่งยืน
+                        ด้วยประสบการณ์และความเชี่ยวชาญด้านเทคโนโลยีที่ลึกซึ้ง เราได้ต่อยอดสู่การให้บริการ AI Chatbot
+                        เพื่อตอบสนองความต้องการของลูกค้าในยุคดิจิทัล</p>
                 </div>
                 <div class="col-sm-8 col-md-6">
                     <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
@@ -353,7 +418,7 @@
     </section>
 
     <!-- Call to action section-->
-    <!-- <section class="cta">
+    <section class="cta">
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="text-white display-1 lh-1 mb-4">
@@ -361,11 +426,11 @@
                     <br />
                     Start building.
                 </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
-                    target="_blank">Download for free</a>
+                <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
+                    target="_blank">Download for free</a> -->
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- App badge section-->
 
@@ -424,6 +489,84 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Contact US</h5>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-4">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
+                                id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Feedback Modal-->
     <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
@@ -517,12 +660,12 @@
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-    
+
     <!-- botpress -->
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2024/12/13/05/20241213055933-ZUNSJZ5Z.js"></script>
-    
- 
+    <script src="https://files.bpcontent.cloud/2024/12/13/05/20241213055933-ZUNSJZ5Z.js"></script>
+
+
 </body>
 
 </html>

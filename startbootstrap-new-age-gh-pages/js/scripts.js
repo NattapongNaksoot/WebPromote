@@ -106,3 +106,4 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
     
+
