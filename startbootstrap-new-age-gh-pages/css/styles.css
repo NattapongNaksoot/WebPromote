@@ -10869,6 +10869,10 @@ section {
   height: 3rem;
 }
 
+.sectionvideo {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
 
 
 /* Nav */
@@ -11099,7 +11103,7 @@ footer a:hover, footer a:active, footer a:focus {
 
 .masthead {
   background-color: #f8f9fa;
-  padding-top: 0rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 .masthead .masthead-device-mockup {
