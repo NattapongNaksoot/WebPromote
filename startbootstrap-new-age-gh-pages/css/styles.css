@@ -11446,7 +11446,7 @@ footer a:hover, footer a:active, footer a:focus {
   text-decoration: underline;
 }
 
-* ฟอนต์ Kanit */
+/* * ฟอนต์ Kanit */ 
 .kanit-thin {
     font-family: "Kanit", serif;
     font-weight: 100;
@@ -11505,6 +11505,13 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
 }
 
+.kanit-semibold-gray {
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 300%;
+}
+
 .kanit-bold {
     font-family: "Kanit", serif;
     font-weight: 700;
@@ -11521,4 +11528,10 @@ footer a:hover, footer a:active, footer a:focus {
     font-family: "Kanit", serif;
     font-weight: 900;
     font-style: normal;
+}
+
+.hbspt-form {
+  padding: 70px; 
+  max-width: 800px; 
+  overflow-y: scroll;   
 }
