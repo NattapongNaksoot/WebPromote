@@ -165,6 +165,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
+  line-height: 150%;
   font-size: 1.25rem;
 }
 
@@ -11464,10 +11465,24 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
 }
 
+.kanit-light-gray {
+  font-family: "Kanit", serif;
+  font-weight: 300;
+  font-style: normal;
+  color:#495057;
+}
+
 .kanit-regular {
     font-family: "Kanit", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.kanit-regular-gray{
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#6c757d;
 }
 
 .kanit-medium {
@@ -11475,6 +11490,14 @@ footer a:hover, footer a:active, footer a:focus {
     font-weight: 500;
     font-style: normal;
 }
+
+.kanit-medium {
+  font-family: "Kanit", serif;
+  font-weight: 500;
+  font-style: normal;
+  color:#6c757d;
+}
+
 
 .kanit-semibold {
     font-family: "Kanit", serif;
