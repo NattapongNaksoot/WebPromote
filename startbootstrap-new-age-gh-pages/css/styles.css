@@ -90,6 +90,12 @@
     scroll-behavior: smooth;
   }
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; /* จำกัดความกว้างไม่ให้เกินขอบจอ */
+  overflow-x: hidden; /* ซ่อน Scroll แนวนอน */
+}
 
 body {
   margin: 0;
@@ -3614,6 +3620,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
+/* nav */
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
@@ -11491,7 +11498,7 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
 }
 
-.kanit-medium {
+.kanit-medium-gray {
   font-family: "Kanit", serif;
   font-weight: 500;
   font-style: normal;
@@ -11505,6 +11512,17 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
 }
 
+.kanit-semibold-static {
+  font-family: "Kanit", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.kanit-semibold-static:hover {
+  font-family: "Kanit", serif;
+  font-weight: 600;
+  font-style: normal;
+  color:#0dcaf0;
+}
 .kanit-semibold-gray {
   font-family: "Kanit", serif;
   font-weight: 400;
@@ -11534,4 +11552,101 @@ footer a:hover, footer a:active, footer a:focus {
   padding: 70px; 
   max-width: 800px; 
   overflow-y: scroll;   
+}
+
+
+
+
+/* Popup overlay */
+.popup {
+  display: none; /* ซ่อน popup เริ่มต้น */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* พื้นหลังโปร่งแสง */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+  position: relative; /* กำหนดตำแหน่งภายใน Popup */
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px; /* กำหนดความสูงของ Popup */
+  background-image: url('./Popup.svg'); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* จัดองค์ประกอบในแนวตั้ง */
+  justify-content: space-between; /* กระจายพื้นที่ระหว่าง body กับปุ่ม */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ปุ่มปิด */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Popup body (ข้อความด้านบน) */
+.popup-body {
+  text-align: center;
+  color: #fff;
+}
+
+.popup-body h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.popup-body p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.popup-button {
+  background : linear-gradient(to right, #a8c6ff, #30D6FF)#0056b3;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  align-self: center; /* จัดปุ่มให้อยู่ตรงกลางในแนวนอน */
+  transition: background-position 0.5s ease;
+  background-size: 200% 200%;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  
+}
+
+.popup-button:hover {
+  background-position: right center;
+  box-shadow: 0 0 15px rgba(202, 232, 255 );
+  transform: translateY(-1px); /* ลอยขึ้นเล็กน้อย */
+  /* background:linear-gradient(to right,#30D6FF ,#3036FF )#0056b3; */
+}
+.botton-a{
+  color: #fff;
+}
+.botton-a:hover{
+  color: #fff;
+}
+/* Popup Link */
+.popup-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* ลบเส้นใต้ลิงก์ */
 }

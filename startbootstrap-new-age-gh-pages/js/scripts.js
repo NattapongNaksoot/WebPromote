@@ -106,4 +106,26 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
     
-
+// แสดง Popup อัตโนมัติเมื่อเปิดหน้าเว็บ
+window.onload = function () {
+    const popup = document.getElementById("popup");
+    popup.style.display = "flex";
+  };
+  
+  // ปิด Popup เมื่อคลิกปุ่มปิด
+  function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+  
+  // ปิด Popup เมื่อคลิกที่พื้นที่นอก Popup Content
+  document.addEventListener("click", function (event) {
+    const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content");
+  
+    // ตรวจสอบว่าคลิกที่พื้นที่นอก popup-content
+    if (popup.style.display === "flex" && !popupContent.contains(event.target)) {
+      popup.style.display = "none";
+    }
+  });
+  
