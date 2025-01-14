@@ -104,9 +104,9 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/Back Slide.svg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <button class="button-36" role="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"><span class="d-flex align-items-center">
+                    <div class="carousel-caption d-block">
+                        <button class="button-36" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span class="d-flex align-items-center">
                                 <i class="bi-chat-text-fill me-2"></i>
                                 <span class="kanit-semibold">สนใจติดต่อ</span>
                             </span>
@@ -114,50 +114,48 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img src="assets/img/Back Slide 2.svg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <button class="button-36" role="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"><span class="d-flex align-items-center">
+                    <div class="carousel-caption d-block">
+                        <button class="button-36" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span class="d-flex align-items-center">
                                 <i class="bi-chat-text-fill me-2"></i>
                                 <span class="kanit-semibold">สนใจติดต่อ</span>
-                            </span></button>
+                            </span>
+                        </button>
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img src="assets/img/Back Slide 3.svg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <button class="button-36" role="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"><span class="d-flex align-items-center">
+                    <div class="carousel-caption d-block">
+                        <button class="button-36" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span class="d-flex align-items-center">
                                 <i class="bi-chat-text-fill me-2"></i>
                                 <span class="kanit-semibold">สนใจติดต่อ</span>
-                            </span></button>
+                            </span>
+                        </button>
                     </div>
                 </div>
 
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
         </div>
 
     </header>
 
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button> -->
-
-    <!-- Modal -->
+    <!-- Example Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -165,7 +163,34 @@
                     <h5 class="kanit-bold" id="exampleModalLabel">ช่องทางการติดต่อ</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!-- <div class="modal-body">
+
+                <!-- hubspot form -->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "48538069",
+                        formId: "508602f7-4261-4991-9441-694b28db93c4"
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Launch demo modal
+    </button> -->
+
+    <!-- Example Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="kanit-bold" id="exampleModalLabel">ช่องทางการติดต่อ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
                     <div class="highlight">
                         <h6 class="kanit-semibold">เวลาทำการ :</h6>
@@ -199,17 +224,7 @@
                         <h6 class="kanit-semibold">เว็บไซต์ :</h6>
                         <p><a href="https://www.q-softthai.com/" target="_blank">q-softthai.com</a></p>
                     </div>
-                </div> -->
-
-                <!-- hubspot form -->
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                <script>
-                    hbspt.forms.create({
-                        portalId: "48538069",
-                        formId: "508602f7-4261-4991-9441-694b28db93c4"
-                    });
-                </script>
-
+                </div>
             </div>
         </div>
     </div>
@@ -264,22 +279,21 @@
                             <circle cx="50" cy="50" r="50"></circle>
                         </svg>
                         <!-- circle back -->
-                        
-                            <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait"
-                                    data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below. -->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                                            <source src="assets/img/Chatbot.mp4" type="video/mp4" />
-                                        </video>
-                                    </div>
+
+                        <div class="device-wrapper">
+                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                <div class="screen bg-black">
+                                    <!-- PUT CONTENTS HERE:-->
+                                    <!-- * * This can be a video, image, or just about anything else.-->
+                                    <!-- * * Set the max width of your media to 100% and the height to-->
+                                    <!-- * * 100% like the demo example below. -->
+                                    <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                                        <source src="assets/img/Chatbot.mp4" type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
-                        
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -425,6 +439,88 @@
         </div>
     </section>
 
+    <!-- <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/check1.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2009-2011</h4>
+                            <h4 class="subheading">Our Humble Beginnings</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/check1.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>March 2011</h4>
+                            <h4 class="subheading">An Agency is Born</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/check1.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>December 2015</h4>
+                            <h4 class="subheading">Transition to Full Service</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/check1.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>July 2020</h4>
+                            <h4 class="subheading">Phase Two Expansion</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> -->
+
     <!-- Call to action section-->
     <section class="cta">
         <div class="cta-content">
@@ -487,11 +583,11 @@
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div class="mb-2">&copy; Business Competitive Intelligence. All Rights Reserved.</div>
-                <a href="#!">Privacy</a>
+                <a href="https://www.q-softthai.com/privacy-policy">Privacy</a>
                 <span class="mx-1">&middot;</span>
-                <a href="#!">Terms</a>
+                <a href="https://www.q-softthai.com/terms-and-conditions">Terms</a>
                 <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
+                <a href="https://www.q-softthai.com/cookies-policy">Cookies</a>
             </div>
         </div>
     </footer>
@@ -665,7 +761,8 @@
             </div>
             </a>
             <!-- ปุ่มอยู่ด้านล่าง -->
-            <button class="popup-button"> <a class="botton-a" href="https://www.q-softthai.com/" target="_blank"><span class="kanit-light">สนใจดูเพิ่มเติม</span></a></button>
+            <button class="popup-button"> <a class="botton-a" href="https://www.q-softthai.com/" target="_blank"><span
+                        class="kanit-light">สนใจดูเพิ่มเติม</span></a></button>
         </div>
     </div>
 
