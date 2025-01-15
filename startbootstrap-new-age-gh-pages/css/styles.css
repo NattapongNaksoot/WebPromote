@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #2937f0;
-  --bs-link-hover-color: #212cc0;
+  --bs-link-color: #000000;
+  --bs-link-hover-color: #666670;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -3625,7 +3625,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: var(nav-link);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -11102,6 +11102,7 @@ footer a:hover, footer a:active, footer a:focus {
   text-decoration: underline;
 }
 
+/* แต่งเอง */
 .mastheadcourse {
   background-color: #f8f9fa;
   padding-top: 6rem;
@@ -11379,14 +11380,14 @@ footer a:hover, footer a:active, footer a:focus {
 
 /* ตั้งค่าสีพื้นฐาน */
 :root {
-  --modal-bg-gradient: linear-gradient(135deg, #007bff, #66b2ff); /* ไล่สีฟ้าสำหรับส่วนหัว */
-  --modal-header-color: #ffffff; /* สีตัวอักษรส่วนหัว */
-  --modal-body-bg: #ffffff; /* พื้นหลังสีขาว */
-  --modal-text-color: #000000; /* สีข้อความในเนื้อหา */
-  --modal-highlight-bg: #f8f9fa; /* กล่องข้อความสีเทาอ่อน */
-  --modal-border-color: #d1d5db; /* สีเส้นขอบ */
-  --modal-link-color: #0056b3; /* สีลิงก์ */
-  --modal-link-hover: #003d80; /* สีลิงก์เมื่อ hover */
+  --modal-bg-gradient: linear-gradient(135deg, #007bff, #66b2ff); 
+  --modal-header-color: #ffffff; 
+  --modal-body-bg: #ffffff; 
+  --modal-text-color: #000000; 
+  --modal-highlight-bg: #f8f9fa; 
+  --modal-border-color: #d1d5db; 
+  --modal-link-color: #0056b3; 
+  --modal-link-hover: #003d80; 
 }
 
 /* สไตล์ Modal */
@@ -11577,14 +11578,12 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
 }
 
+/* แต่งฟอร์ม */
 .hbspt-form {
   padding: 70px; 
   max-width: 800px; 
   overflow-y: scroll;   
 }
-
-
-
 
 /* Popup overlay */
 .popup {
