@@ -74,7 +74,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #000000;
-  --bs-link-hover-color: #666670;
+  --bs-link-hover-color: #50a2ff;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -3625,7 +3625,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(nav-link);
+  --bs-nav-link-color: var(--bs-nav-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -3769,6 +3769,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10907,7 +10908,7 @@ section {
   color: #6c757d;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #2937f0;
+  color: #50a2ff;
 }
 
 /*!
@@ -11535,7 +11536,6 @@ footer a:hover, footer a:active, footer a:focus {
   color:#6c757d;
 }
 
-
 .kanit-semibold {
     font-family: "Kanit", serif;
     font-weight: 600;
@@ -11606,7 +11606,7 @@ footer a:hover, footer a:active, footer a:focus {
   height: 100%;
   max-width: 400px;
   max-height: 400px; /* กำหนดความสูงของ Popup */
-  background-image: url('./Popup.svg'); 
+  background-image: url('./Power.png'); 
   background-size: cover;
   background-position: center;
   border-radius: 15px;
