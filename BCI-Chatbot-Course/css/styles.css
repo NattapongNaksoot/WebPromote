@@ -11523,7 +11523,7 @@ footer a:hover, footer a:active, footer a:focus {
   font-family: "Kanit", serif;
   font-weight: 350;
   font-style: normal;
-  font-size: 18px; /* ขนาดเริ่มต้น */
+  font-size: 20px; /* ขนาดเริ่มต้น */
 }
 
 /* สำหรับหน้าจอที่เล็กกว่า 768px (Tablet) */
@@ -11569,7 +11569,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .kanit-medium-h2 {
   font-family: "Kanit", serif;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   text-align: center;
   font-size: 2rem;
@@ -11841,5 +11841,89 @@ h1.section-heading {
   }
   .feature-item {
       width: 80%;
+  }
+}
+
+/* Contact2 */
+/* Contact Section */
+.contact-area {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Contact Grid Layout */
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Contact Box */
+.contact-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  background: linear-gradient(180deg, #f4f4f4,#ffffff,#ffffff );
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icons */
+.contact-icon {
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Contact Heading & Text */
+.contact-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-text {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+  .contact-box {
+      width: 90%;
   }
 }
