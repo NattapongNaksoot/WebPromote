@@ -508,13 +508,14 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: 1.7rem;
   font-weight: 300;
   line-height: 1.2;
+  font-family: "Kanit";
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -544,6 +545,7 @@ progress {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
+  font-family: "Kanit";
 }
 @media (min-width: 1200px) {
   .display-4 {
@@ -7985,7 +7987,7 @@ textarea.form-control-lg {
 }
 
 .lh-1 {
-  line-height: 1 !important;
+  line-height: 1.5 !important;
 }
 
 .lh-sm {
@@ -10972,8 +10974,8 @@ section {
 
 section.cta {
   position: relative;
-  padding: 15rem 0;
-  background-image: url("https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  padding: 8rem 0;
+  background-image: url("https://images.unsplash.com/photo-1566738826204-9281873a794e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
 }
@@ -11550,7 +11552,7 @@ footer a:hover, footer a:active, footer a:focus {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #7cafe2;
 }
 
   
@@ -11744,7 +11746,8 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 h1.section-heading {
-  font-size: 28px;
+  font-family: "Kanit";
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
   background: linear-gradient(90deg, #060050,#50ddff,#002eff, #a062ff); /* Gradient สี */
