@@ -11512,8 +11512,9 @@ footer a:hover, footer a:active, footer a:focus {
 
 .kanit-regular {
     font-family: "Kanit", serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
+    font-size: 15px;
 }
 
 .kanit-regular-gray{
@@ -11522,13 +11523,38 @@ footer a:hover, footer a:active, footer a:focus {
   font-style: normal;
   color:#6c757d;
 }
-
+.kanit-semi-medium{
+  font-family: "Kanit", serif;
+    font-weight: 450;
+    font-style: normal;
+}
 .kanit-medium {
     font-family: "Kanit", serif;
     font-weight: 500;
     font-style: normal;
 }
 
+.kanit-medium-h1 {
+  font-family: "Kanit", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.kanit-medium-h2 {
+  font-family: "Kanit", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+  
+  
 .kanit-medium-gray {
   font-family: "Kanit", serif;
   font-weight: 500;
@@ -11725,4 +11751,70 @@ h1.section-heading {
   -webkit-background-clip: text; /* ตัด Gradient ให้เป็นเฉพาะตัวอักษร */
   -webkit-text-fill-color: transparent; /* ทำให้พื้นหลังข้อความโปร่งใส */
   text-align: center; /* จัดให้อยู่ตรงกลาง */
+}
+
+/* Section Styling */
+.features-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Feature Item */
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50px;
+}
+
+.feature-item:hover {
+  border-radius: 50px;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Icon */
+.feature-icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Feature Title */
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Feature Description */
+.feature-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive: Stack items on smaller screens */
+@media (max-width: 768px) {
+  .feature-item {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .feature-item {
+      width: 80%;
+  }
 }
