@@ -508,7 +508,7 @@ progress {
 }
 
 .display-1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2;
   font-family: "Kanit";
@@ -11518,6 +11518,28 @@ footer a:hover, footer a:active, footer a:focus {
     font-style: normal;
     font-size: 15px;
 }
+
+.kanit-regular {
+  font-family: "Kanit", serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 18px; /* ขนาดเริ่มต้น */
+}
+
+/* สำหรับหน้าจอที่เล็กกว่า 768px (Tablet) */
+@media (max-width: 768px) {
+  .kanit-regular {
+      font-size: 14px;
+  }
+}
+
+/* สำหรับหน้าจอที่เล็กกว่า 576px (Mobile) */
+@media (max-width: 576px) {
+  .kanit-regular {
+      font-size: 12px;
+  }
+}
+
 
 .kanit-regular-gray{
   font-family: "Kanit", serif;
