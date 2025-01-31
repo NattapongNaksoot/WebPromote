@@ -11569,12 +11569,12 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .kanit-medium-h2 {
   font-family: "Kanit", serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #7cafe2;
+  color: #2b88e5;
 }
 
   
@@ -11739,10 +11739,10 @@ footer a:hover, footer a:active, footer a:focus {
 
 .course-posters .section-heading {
   font-family: "Kanit", serif;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 45px;
-  color: #333;
+  color: #0080ff;
 }
 
 /* Poster Container */
@@ -11771,9 +11771,7 @@ h1.section-heading {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
-  background: linear-gradient(90deg, #060050,#50ddff,#002eff, #a062ff); /* Gradient สี */
-  -webkit-background-clip: text; /* ตัด Gradient ให้เป็นเฉพาะตัวอักษร */
-  -webkit-text-fill-color: transparent; /* ทำให้พื้นหลังข้อความโปร่งใส */
+  color: #0080ff;
   text-align: center; /* จัดให้อยู่ตรงกลาง */
 }
 
