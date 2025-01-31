@@ -11747,13 +11747,12 @@ footer a:hover, footer a:active, footer a:focus {
 
 /* Poster Container */
 .poster-item {
-  margin-bottom: 100px;
+  margin-bottom: 80px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .poster-item:hover {
   transform: translateY(-5px);
-  
 }
 
 /* Poster Image */
@@ -11895,7 +11894,7 @@ h1.section-heading {
 .contact-box:hover {
   background: linear-gradient(180deg, #f4f4f4,#ffffff,#ffffff );
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
 /* Contact Icons */
