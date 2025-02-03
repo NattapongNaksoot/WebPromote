@@ -193,7 +193,7 @@ const translations = {
 
     "SeeMore":"See more",
 
-    "Language":"English"
+    "Language":"🌍 English"
   },  
   "th": {
     "CompanyName": "บริษัทจำกัด บิสซิเนส คอมเพ็ดทิทีฟ อินเทลลิเจนซ์",
@@ -257,7 +257,7 @@ const translations = {
 
     "SeeMore":"สนใจดูเพิ่มเติม",
 
-    "Language":"ภาษาไทย"
+    "Language":"🌍 ภาษาไทย"
   }
 };
 
@@ -266,12 +266,31 @@ function changeLanguage(lang) {
       const key = element.getAttribute("data-lang");
       element.innerHTML = translations[lang][key]; // ใช้ innerHTML เพื่อรองรับ <br>
   });
+
+  // อัปเดตรูปธงชาติใน Dropdown
+  let langIcon = document.querySelector("#languageDropdown img"); 
+  let langText = document.querySelector("#languageDropdown span");
+
+  if (lang === "en") {
+      langIcon.src = "assets/img/united-kingdom.png"; // เปลี่ยนเป็นธงอังกฤษ
+      langText.textContent = "English"; // เปลี่ยนข้อความเป็น English
+  } else if (lang === "th") {
+      langIcon.src = "assets/img/thailand.png"; // เปลี่ยนเป็นธงไทย
+      langText.textContent = "ภาษาไทย"; // เปลี่ยนข้อความเป็น ภาษาไทย
+  }
+
+  // บันทึกภาษาที่เลือกไว้ใน LocalStorage
+  localStorage.setItem("selectedLanguage", lang);
 }
+
 // โหลดภาษาที่เคยเลือกไว้ (เมื่อรีเฟรชหน้าเว็บ)
 document.addEventListener("DOMContentLoaded", function () {
   const savedLang = localStorage.getItem("selectedLanguage") || "en";
   changeLanguage(savedLang);
 });
+
+
+
 
 
 
