@@ -272,18 +272,18 @@ function changeLanguage(lang) {
   let langText = document.querySelector("#languageDropdown span");
 
   if (lang === "en") {
-      langIcon.src = "assets/img/united-kingdom.png"; // เปลี่ยนเป็นธงอังกฤษ
-      langText.textContent = "English"; // เปลี่ยนข้อความเป็น English
+      langIcon.src = "assets/img/united-kingdom.png"; 
+      langText.textContent = "English"; 
   } else if (lang === "th") {
-      langIcon.src = "assets/img/thailand.png"; // เปลี่ยนเป็นธงไทย
-      langText.textContent = "ภาษาไทย"; // เปลี่ยนข้อความเป็น ภาษาไทย
+      langIcon.src = "assets/img/thailand.png"; 
+      langText.textContent = "ภาษาไทย"; 
   }
 
   // บันทึกภาษาที่เลือกไว้ใน LocalStorage
   localStorage.setItem("selectedLanguage", lang);
 }
 
-// โหลดภาษาที่เคยเลือกไว้ (เมื่อรีเฟรชหน้าเว็บ)
+// โหลดภาษาที่เคยเลือกไว้ 
 document.addEventListener("DOMContentLoaded", function () {
   const savedLang = localStorage.getItem("selectedLanguage") || "en";
   changeLanguage(savedLang);

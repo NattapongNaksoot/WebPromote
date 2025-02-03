@@ -11938,7 +11938,7 @@ h1.section-heading {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #f8f9fa; /* สีพื้นหลังปุ่ม */
+  background-color: #fff; 
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 8px 12px;
