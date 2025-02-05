@@ -11533,10 +11533,9 @@ footer a:hover, footer a:active, footer a:focus {
   }
 }
 
-/* สำหรับหน้าจอที่เล็กกว่า 576px (Mobile) */
-@media (max-width: 576px) {
-  .kanit-regular {
-      font-size: 8px;
+@media (max-width: 576px) { /* หายไปเลยไม่ต้องขึ้นมาให้บัคแล้วววว */
+  .hide-on-small {
+      display: none !important;
   }
 }
 
@@ -11957,3 +11956,4 @@ h1.section-heading {
 .lang-btn:hover {
   background-color: #e0e0e0;
 }
+
