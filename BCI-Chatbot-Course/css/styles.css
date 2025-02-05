@@ -11536,7 +11536,7 @@ footer a:hover, footer a:active, footer a:focus {
 /* สำหรับหน้าจอที่เล็กกว่า 576px (Mobile) */
 @media (max-width: 576px) {
   .kanit-regular {
-      font-size: 12px;
+      font-size: 8px;
   }
 }
 
@@ -11739,7 +11739,7 @@ footer a:hover, footer a:active, footer a:focus {
 
 .course-posters .section-heading {
   font-family: "Kanit", serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 45px;
   color: #0080ff;
