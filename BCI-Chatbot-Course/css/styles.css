@@ -11531,7 +11531,7 @@ footer a:hover, footer a:active, footer a:focus {
   .hide-on-small {
       display: none !important;
   }
-}
+} 
 
 /* สำหรับหน้าจอที่เล็กกว่า 768px (Tablet) */
 @media (max-width: 991.20px) {
