@@ -3660,6 +3660,7 @@ textarea.form-control-lg {
   cursor: default;
 }
 
+
 .nav-tabs {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: #dee2e6;
@@ -11526,10 +11527,17 @@ footer a:hover, footer a:active, footer a:focus {
   font-size: 20px; /* ขนาดเริ่มต้น */
 }
 
+@media (max-width: 1130.40px) { /* หายไปเลยไม่ต้องขึ้นมาให้บัคแล้วววว */
+  .hide-on-small {
+      display: none !important;
+  }
+}
+
 /* สำหรับหน้าจอที่เล็กกว่า 768px (Tablet) */
-@media (max-width: 768px) {
+@media (max-width: 991.20px) {
   .kanit-regular {
-      font-size: 14px;
+    display: block !important; 
+    font-size: 18px;
   }
 }
 
