@@ -132,7 +132,7 @@ document.addEventListener("click", function (event) {
 
 const translations = {
   "en": {
-    "CompanyName": "Business competitive Intelligence Co.,Ltd.",
+    "CompanyName": "Business Competitive Intelligence Co.,Ltd.",
     "Course": "Course",
     "ChatBot": "ChatBot",
     "AboutUs": "About Us",
